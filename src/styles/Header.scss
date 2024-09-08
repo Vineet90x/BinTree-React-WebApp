@@ -6,7 +6,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.2);  /* Lighter translucent background */
     backdrop-filter: blur(10px);  /* Apply blur for frosted glass effect */
     -webkit-backdrop-filter: blur(10px); /* Ensure compatibility with Safari */
