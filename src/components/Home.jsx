@@ -43,7 +43,7 @@ const Home = () => {
           <img src={l7} alt="Logo 7" />
           <img src={l8} alt="Logo 8" />
       </div>
-
+      
       <div class="logos-slide">
       <img src={l1} alt="Logo 1" />
           <img src={l2} alt="Logo 2" />
@@ -58,18 +58,18 @@ const Home = () => {
      </div>
      <div className="home4">
       <p className='title'>Regain Mobility</p>
-      <h1>Help your patients regain mobility with BinThree</h1>
-      <p className='para'>Every year, 55.9 million people sustain an acquired brain injury, 15 million experience stroke, up to 500,000 people sustain a spinal cord injury (SCI), and 2.8 million people live with MS. Many of these people are left with limited mobility or some form of paralysis. This can be a devastating diagnosis that is completely life-changing for both patients and their families.</p>
-      <p className='para'>Now, patients post stroke, brain injury or spinal cord injury and those affected by MS are able to utilize BinThree’s exoskeletons in therapy to regain basic movements or even the ability to walk again. The wearer may experience an increase in range of motion and activation of muscles they had difficulty with before. PTs can improve their patients’ gait or get them back up to work on balance with the help of our robotic exoskeletons, BinThreeNR and BinThree Indego Therapy. For individuals living with spinal cord injuries, BinThree Indego Personal can help get them up and walking at home and in their communities again. This technology can have incredible benefits for many individuals and give them a sense of independence back.</p>
-      <img src={m2} alt="patient" />
-      <button className='kbtn'>Know More</button>
+        <h1>Help your patients regain mobility with BinThree</h1>
+        <p className='para1'>Every year, 55.9 million people sustain an acquired brain injury, 15 million experience stroke, up to 500,000 people sustain a spinal cord injury (SCI), and 2.8 million people live with MS. Many of these people are left with limited mobility or some form of paralysis. This can be a devastating diagnosis that is completely life-changing for both patients and their families.</p>
+        <p className='para2'>Now, patients post stroke, brain injury or spinal cord injury and those affected by MS are able to utilize BinThree’s exoskeletons in therapy to regain basic movements or even the ability to walk again. The wearer may experience an increase in range of motion and activation of muscles they had difficulty with before. PTs can improve their patients’ gait or get them back up to work on balance with the help of our robotic exoskeletons, BinThreeNR and BinThree Indego Therapy. For individuals living with spinal cord injuries, BinThree Indego Personal can help get them up and walking at home and in their communities again. This technology can have incredible benefits for many individuals and give them a sense of independence back.</p>
+        <img src={m2} alt="patient" />
+        <button className='kbtn'>Know More</button>
      </div>
      <div className="home5">
      <img src={m3} alt="patient" />
       <p className='title'>Rehabilitation</p>
       <h1>BinThree combines strength with safety, reducing fatigue and injury</h1>
-      <p className='para'>Every year, 55.9 million people sustain an acquired brain injury, 15 million experience stroke, up to 500,000 people sustain a spinal cord injury (SCI), and 2.8 million people live with MS. Many of these people are left with limited mobility or some form of paralysis. This can be a devastating diagnosis that is completely life-changing for both patients and their families.</p>
-      <p className='para'>Now, patients post stroke, brain injury or spinal cord injury and those affected by MS are able to utilize BinThree’s exoskeletons in therapy to regain basic movements or even the ability to walk again. The wearer may experience an increase in range of motion and activation of muscles they had difficulty with before. PTs can improve their patients’ gait or get them back up to work on balance with the help of our robotic exoskeletons, BinThreeNR and BinThree Indego Therapy.</p>
+      <p className='para1'>Every year, 55.9 million people sustain an acquired brain injury, 15 million experience stroke, up to 500,000 people sustain a spinal cord injury (SCI), and 2.8 million people live with MS. Many of these people are left with limited mobility or some form of paralysis. This can be a devastating diagnosis that is completely life-changing for both patients and their families.</p>
+      <p className='para2'>Now, patients post stroke, brain injury or spinal cord injury and those affected by MS are able to utilize BinThree’s exoskeletons in therapy to regain basic movements or even the ability to walk again. The wearer may experience an increase in range of motion and activation of muscles they had difficulty with before. PTs can improve their patients’ gait or get them back up to work on balance with the help of our robotic exoskeletons, BinThreeNR and BinThree Indego Therapy.</p>
       <button className='kbtn'>Learn About BinTree</button>
      </div>
      
