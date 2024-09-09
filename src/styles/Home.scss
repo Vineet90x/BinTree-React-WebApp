@@ -38,7 +38,10 @@ body {
     position: absolute;
     background: url("../assests/hd2.avif");
     filter: blur(1px);
+    background-position: right;
     z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

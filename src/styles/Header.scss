@@ -2,18 +2,18 @@
 
 nav {
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.2);  /* Lighter translucent background */
-    backdrop-filter: blur(10px);  /* Apply blur for frosted glass effect */
-    -webkit-backdrop-filter: blur(10px); /* Ensure compatibility with Safari */
+    // background-color: rgba(255, 255, 255, 0.2);  
+    // backdrop-filter: blur(10px);  
+    // -webkit-backdrop-filter: blur(10px); 
     border-radius: 10px;  /* Optional: add rounded corners */
     top: 0;
     z-index: 10;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    // box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 
     > a > h1 {
       text-transform: uppercase;  
