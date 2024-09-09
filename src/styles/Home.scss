@@ -1,15 +1,15 @@
 @import 'colors';
-
-body {
+.body{
   overflow-x: hidden;
+  background-color: white;
 }
 
 .home {
   width: 100%;
   height: 100vh;
+  
 
   main {
-    position: absolute;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -18,23 +18,26 @@ body {
     height: 100%;
     padding: 2rem;
     justify-content: center;
+  
 
     h1 {
-      font: 400 6rem 'Arial', sans-serif; // Adjust font family here
+      font-size:2.9rem;
+      font-weight: 600;
       color: rgb(255, 255, 255);
     }
 
     p {
-      font: 900 1rem 'Arial', sans-serif; // Adjust font family here
+      font-size: small;
+      font-weight: 300;
       color: white;
-      width: 30%;
+      width: 400px;
     }
   }
 
   &::before {
     content: "";
     width: 100%;
-    height: 100%;
+    height: 110%;
     position: absolute;
     background: url("../assests/hd2.avif");
     filter: blur(1px);
@@ -86,24 +89,26 @@ body {
   }
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
+.home3{
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
-  to {
-    transform: translateX(-100%);
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
   }
-}
-
-.logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: white;
-  white-space: nowrap;
-  position: relative;
-
-  &::before,
-  &::after {
+  
+  .logos:before,
+  .logos:after {
     position: absolute;
     top: 0;
     width: 250px;
@@ -111,26 +116,26 @@ body {
     content: "";
     z-index: 2;
   }
-
-  &::before {
+  
+  .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
   }
-
-  &::after {
+  
+  .logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
   }
-
-  &:hover .logos-slide {
-    animation-play-state: running;
+  
+  .logos:hover .logos-slide {
+    animation-play-state:running;
   }
-
+  
   .logos-slide {
     display: inline-block;
     animation: 35s slide infinite linear;
   }
-
+  
   .logos-slide img {
     height: 50px;
     margin: 0 40px;
@@ -141,12 +146,13 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  padding: 10px 80px;
-  align-items: flex-start;
-  margin-bottom: 10%;
+  padding: 10px 80px; 
+  margin-bottom: 10% ;
+  position: relative;
 
   .title {
+    position: absolute ;
+    left: 5%;
     color: $second;
     letter-spacing: 2px;
     word-spacing: 5px;
@@ -154,62 +160,83 @@ body {
     font-weight: 500;
     margin: 15px 0px 20px;
     width: 70%;
-    position: relative;
 
     &::before {
       content: '';
-      position: absolute;
+      position:absolute;
       bottom: -10px;
-      left: 0;
-      height: 1px;
-      width: 30px;
+      height: 1.5px;
+      width: 35px;
       background-color: $tcolor;
     }
   }
 
   h1 {
-    font-size: 2.5rem;
+    position: absolute ;
+    top: 10%;
+    left: 5%;
+    font-size: 2rem;
     color: $tcolor;
     width: 50%;
     margin: 10px 0px;
     line-height: 1.2;
+    right: 50%;
   }
 
-  .para {
-    display: flex;
+  .para1 {
+    position:absolute;
+    top: 25%;
+    left: 5%;
     flex-direction: column;
     letter-spacing: 0;
     line-height: 1.66;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    width: 55%;
+    width: 50%;
+    height: auto;
+    margin: 20px 0px;
+    font-size: 18px;
+  }
+
+  .para2 {
+    position:absolute;
+    top: 60%;
+    left: 5%;
+    flex-direction: column;
+    letter-spacing: 0;
+    line-height: 1.66;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
     height: auto;
     margin: 20px 0px;
     font-size: 18px;
   }
 
   img {
-    width: 40%;
-    height: 100%;
-    position: relative;
-    bottom: 40%;
-    left: 80px;
+    max-width: 560px;
+    height: 100vh;
+    position: absolute;
+    top: 20%;
+    right: 5%;
     margin-bottom: 10%;
     border-radius: 5%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 20px rgba(0, 0, 0, 0.19);
   }
 
   .kbtn {
-    padding: 8px 35px 11px;
+    padding: 8px 35px;
     font-size: 16px;
-    position: relative;
-    bottom: 64%;
+    position: absolute;
+    bottom: -43%;
+    left: 5%;
     border-radius: 8px;
     background-color: $tcolor;
     color: white;
     outline: none;
     transition: 0.5s;
     cursor: pointer;
+    margin-bottom: 50px;
 
     &:hover {
       background-color: whitesmoke;
@@ -221,15 +248,17 @@ body {
 .home5 {
   width: 100%;
   height: 100vh;
-  padding: 50px 80px;
-  margin: 30px 20px;
+  margin: 40px 20px;
+  padding: 60px 50px;
+  display: flex;
+  position: relative;
 
   img {
-    max-width: 560px;
+    max-width: 520px;
     border-radius: 5%;
-    position: relative;
-    right: 20px;
-    top: 40%;
+    position: absolute;
+    right: 55%;
+    top: 70%;
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2), 0 1px 20px rgba(0, 0, 0, 0.19);
   }
 
@@ -239,54 +268,70 @@ body {
     word-spacing: 5px;
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 15px 0px 20px;
+    margin: 30px 0px 20px;
     width: 20%;
-    position: relative;
+    position: absolute;
     left: 50%;
-    bottom: 65%;
+    bottom: 60%;
 
     &::before {
       content: '';
       position: absolute;
       bottom: -10px;
       left: 0;
-      height: 2px;
-      width: 30px;
+      height: 1px;
+      width: 40px;
       background-color: $tcolor;
     }
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $tcolor;
-    width: 50%;
+    width: 45%;
     margin: 10px 0px;
     line-height: 1.2;
     position: relative;
     left: 50%;
-    bottom: 65%;
+    top: 35%;
   }
 
-  .para {
-    letter-spacing: 0px;
-    word-spacing: 1px;
+  .para1 {
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    flex-direction: column;
+    letter-spacing: 0;
     line-height: 1.66;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    width: 45%;
+    height: auto;
     margin: 20px 0px;
-    position: relative;
+    font-size: 18px;
+  }
+
+  .para2 {
+    position:absolute;
+    top: 97%;
     left: 50%;
-    bottom: 65%;
-    width: 50%;
+    flex-direction: column;
+    letter-spacing: 0;
+    line-height: 1.66;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    width: 45%;
+    height: auto;
+    margin: 20px 0px;
+    font-size: 18px;
   }
 
   .kbtn {
     padding: 8px 35px 11px;
     font-size: 16px;
-    position: relative;
-    bottom: 63%;
-    left: 50%;
+    position: absolute;
+    top: 148%;
+    right: 31%;
     border-radius: 8px;
     background-color: $tcolor;
     color: white;
